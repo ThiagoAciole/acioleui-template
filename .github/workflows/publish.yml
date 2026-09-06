@@ -7,6 +7,11 @@ on:
     tags:
       - "v*"
   workflow_dispatch:
+    inputs:
+      otp:
+        description: "Código OTP (2FA) do NPM (opcional se usar token de automação)"
+        required: false
+        type: string
 
 permissions:
   contents: read
@@ -53,6 +58,12 @@ jobs:
         run: npm ci
 
       - name: Publish to NPM
-        run: npm publish --access public --provenance
+        run: |
+          OTP="${{ github.event.inputs.otp || secrets.NPM_OTP }}"
+          if [ -n "$OTP" ]; then
+            npm publish --access public --provenance --otp="$OTP"
+          else
+            npm publish --access public --provenance
+          fi
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

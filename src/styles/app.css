@@ -1,0 +1,44 @@
+.app-shell {
+  display: flex;
+  height: 100dvh;
+  min-height: 100vh;
+  background: var(--bg-app);
+}
+
+.app-content {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+}
+
+.app-topbar {
+  min-height: 72px;
+  justify-content: flex-end;
+  background: var(--bg-surface);
+}
+
+.app-main {
+  flex: 1;
+  background: var(--bg-app);
+}
+
+.home-page {
+  min-height: 100%;
+  padding: var(--space-6) var(--space-5);
+}
+
+.home-content {
+  min-height: 620px;
+  justify-content: center;
+}
+
+.home-actions {
+  width: min(100%, 454px);
+}
+
+@media (max-width: 720px) {
+  .home-page {
+    padding: var(--space-5) var(--space-3);
+  }
+}

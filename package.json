@@ -1,0 +1,80 @@
+{
+  "name": "create-acioleui",
+  "version": "0.1.0",
+  "description": "Template base e CLI para criar aplicações React modernas com AcioleUI, Vite e TypeScript",
+  "type": "module",
+  "author": "Thiago Aciole",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThiagoAciole/react-template.git"
+  },
+  "keywords": [
+    "acioleui",
+    "create-acioleui",
+    "react",
+    "template",
+    "vite",
+    "typescript",
+    "ui-kit"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "bin": {
+    "create-acioleui": "./scripts/create-project.mjs"
+  },
+  "files": [
+    "scripts",
+    "src",
+    "public",
+    "index.html",
+    "vite.config.ts",
+    "tsconfig*.json",
+    "eslint.config.js",
+    ".prettierrc",
+    ".prettierignore",
+    "_gitignore",
+    ".vscode",
+    "AGENTS.md",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "validate": "npm run lint && npm run format:check && npm run build",
+    "preview": "vite preview",
+    "create": "node scripts/create-project.mjs"
+  },
+  "bin": {
+    "create-acioleui": "./scripts/create-project.mjs"
+  },
+  "dependencies": {
+    "acioleui": "^0.1.11",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.18.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "@types/node": "^24.12.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.0",
+    "eslint": "^9.39.4",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.4.0",
+    "prettier": "^3.9.6",
+    "prettier": "^3.5.3",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.56.1",
+    "vite": "^8.0.0"
+  }
+}

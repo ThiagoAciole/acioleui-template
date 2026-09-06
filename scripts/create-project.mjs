@@ -74,6 +74,7 @@ function isValidName(name) {
 const IGNORE = [
   "node_modules",
   ".git",
+  ".github",
   "dist",
   "dist-ssr",
   ".turbo",

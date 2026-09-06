@@ -22,7 +22,7 @@
     "node": ">=18.0.0"
   },
   "bin": {
-    "create-acioleui": "./scripts/create-project.mjs"
+    "create-acioleui": "scripts/create-project.mjs"
   },
   "files": [
     "scripts",

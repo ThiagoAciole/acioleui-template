@@ -1,13 +1,13 @@
 {
   "name": "create-acioleui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Template base e CLI para criar aplicações React modernas com AcioleUI, Vite e TypeScript",
   "type": "module",
   "author": "Thiago Aciole",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ThiagoAciole/react-template.git"
+    "url": "git+https://github.com/ThiagoAciole/acioleui-template.git"
   },
   "keywords": [
     "acioleui",
